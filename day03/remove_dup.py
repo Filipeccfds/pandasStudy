@@ -16,3 +16,7 @@ df
 df.drop_duplicates()
 # %%
 df.drop_duplicates(subset=["Nome","Idade"], keep="last")
+ # %%
+df = (df.sort_values(by="Update_at", ascending=False )
+       .drop_duplicates(subset=["Nome", "Idade"], keep="first"))
+df
