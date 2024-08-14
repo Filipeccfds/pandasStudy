@@ -29,3 +29,4 @@ dfs[2]
 # %%
 df_todos = pd.concat(dfs, axis=1).reset_index()
 df_todos.to_csv("../database/df_allipea.csv", sep=";",index=False)
+df_todos

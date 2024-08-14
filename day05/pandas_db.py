@@ -55,4 +55,5 @@ df_01.to_sql("tb_nova",engine, index=False)
 # %%
 df_02.to_sql("tb_nova",engine, index=False, if_exists="append")
 
-
+# %%
+pd.read_sql("tb_nova", engine)
